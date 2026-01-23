@@ -1,0 +1,164 @@
+@import url(variables.css);
+
+/* Estilos base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-4);
+  margin: 0;
+  justify-content: center;
+  /* display: flex; */
+    /* overflow-x: hidden; */
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #bdbdbd  ;
+    color: #FFFFFF;
+  }
+}
+
+.principal{
+    /* background: green; */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    /* align-items: center; */
+    /* justify-content: center; */
+
+}
+.nav{
+width: 100%;
+/* background-color: pink; */
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+  gap: clamp(12px, 13vw, 470px);
+
+}
+
+.lander{
+    
+    font-family: 'Poppins-SemiBold';
+    font-size: 2.875rem ;
+    color: var(--color-1);
+    /* margin-left: 100px; */
+    /* background-color: red; */
+    /* height: 69px; */
+    /* text-align: center; */
+    /* margin: 0; */
+}
+
+.footer{
+    /* background: gray; */
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    /* margin-top: 25px; */
+    /* margin-right: 100px; */
+    justify-content: space-between;
+}
+
+.home{
+    color: var(--color-5);
+    font-family: "Poppins-Medium";
+            font-size: 1rem ;
+
+}
+p{
+    color: var(--color-2);
+    font-family: "Poppins-Medium";
+        font-size: 1rem ;
+
+}
+
+.car{
+    width: 100%;
+    margin: 70px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+    padding: 0 40px;
+    /* background-color: black; */
+}
+
+
+.landingP{
+    flex: 1;
+    /* margin-left:8rem; */
+    max-width: 500px;
+    /* max-width: 760px; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    /* padding-left: 8rem; */
+    /* background-color: blue; */
+    align-items: center;
+}
+.landingP h1{
+    font-family: 'Poppins-SemiBold';
+    color: var(--color-1);
+    font-size: 4rem;
+    text-align: center;
+    line-height: 1.1;
+}
+
+.landingP p{
+    color: var(--color-3);
+    font-size: 0.9rem;
+    text-align: center;
+}
+.landingP button{
+    margin-top: 15px;
+ background-color: var(--color-5);
+ font-family: "Poppins-Medium";
+ font-size:1rem;
+ color: var(--color-4);
+ padding: 15px 30px; /* lo que distrancia con el borde de la caja */
+ width: fit-content; /* el texto abraza el contenido */
+ border-radius: 25px;
+ border: 1px solid black; /* le pone un borde negro al botton*/
+font-weight: bold; /*hace que el exto se vea en negrita*/ 
+cursor: pointer;
+text-align: center;
+}
+
+.content-img{
+    flex: 1; /* Ocupa el otro 50% del espacio flexible */
+    display: flex;
+    justify-content: flex-end; /* Alinea la imagen a la derecha de su caja, pega el contenido al final del contenedor*/
+}
+
+.img{
+  width: 100%;
+  max-width: 760px;
+  height: auto;
+  object-fit: contain;
+  /* display: block; */
+
+}
+
+
+@media (max-width: 768px) {
+    .car {
+        flex-direction: column; /* Imagen arriba, texto abajo en móvil (o column normal) */
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .landingP {
+        align-items: center; /* Centrar botón y texto en móvil */
+    }
+    
+    .content-img {
+        justify-content: center;
+    }
+}
