@@ -1,0 +1,57 @@
+@import url(variables.css);
+
+/* Estilos base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* background-color: var(--color-4); */
+  margin: 0;
+  justify-content: center;
+  /* display: flex; */
+    /* overflow-x: hidden; */
+}
+
+.lander-card{
+    width: 100%;
+    height: 100%;
+    /* background-color: yellow; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+    text-align: center;
+    align-items: center;
+    border-radius: 20px;
+    padding: 40px 100px;
+transition: transform 0.3s ease; /* Un efecto bonito al pasar el mouse (opcional) */
+    box-sizing: border-box;    /* Para que el padding no aumente el tamaño total */
+    background-color: var(--color-2);
+}
+
+.lander-card:hover {
+    transform: translateY(-5px); /* Efecto de "flotar" al pasar el mouse */
+}
+
+.lander-card .img{
+    width: 69px;
+    height: 69px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+.lander-card .tittle{
+    font-family: "Poppins-Medium";
+    color: var(--color-1);
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+}
+
+.lander-card .lorem{
+    font-family: "Poppins-Regular";
+    color: var(--color-3);
+    font-size: 0.9rem;
+    max-width: 90%; /* Para que el texto no toque los bordes laterales de la tarjeta */
+}
