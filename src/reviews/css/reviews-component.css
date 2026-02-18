@@ -1,0 +1,55 @@
+@import url(variables.css);
+
+/* Estilos base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--color-2);
+  margin: 0;
+  justify-content: center;
+  /* display: flex; */
+    /* overflow-x: hidden; */
+}
+
+/* Contenedor que envuelve el título y el slider */
+.boxPrincipal {
+  text-align: center;
+  padding: 80px 20px 40px 20px;
+  background-color: #ffffff; /* Asegura el fondo blanco de la imagen */
+}
+
+/* El título "customer's reviews" */
+.boxPrincipal h1 {
+  font-family: 'Inter', 'Arial Black', sans-serif; /* Una fuente sans-serif gruesa */
+  font-size: 3.5rem;      /* Tamaño grande */
+  font-weight: 800;       /* Extra bold */
+  color: #333333;         /* Gris muy oscuro, casi negro */
+  line-height: 1;         /* Espaciado estrecho entre líneas */
+  margin-bottom: 60px;    /* Espacio antes de las reseñas */
+  text-transform: capitalize; /* Para que "Customer's Reviews" mantenga las mayúsculas */
+  
+  /* Esto fuerza a que el título se rompa en dos líneas como en la imagen */
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ajuste para el contenedor del slider */
+.scrollTo {
+  width: 100%;
+  overflow-x: auto; /* Permite scroll si las reviews no caben */
+  display: flex;
+  justify-content: center;
+}
+
+/* Media query para que el título no sea tan gigante en móviles */
+@media (max-width: 768px) {
+  .boxPrincipal h1 {
+    font-size: 2.5rem;
+    max-width: 300px;
+  }
+}

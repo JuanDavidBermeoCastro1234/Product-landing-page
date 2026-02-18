@@ -1,0 +1,78 @@
+@import url(variables.css);
+
+/* Contenedor principal (el que tiene el display flex) */
+.reviews-wrapper {
+  background-color: var(--color-4);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 40px; /* Espacio entre columnas */
+  padding: 80px 40px;
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+/* Cada tarjeta de review individual */
+.review {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra contenido horizontalmente */
+  text-align: center;  /* Centra el texto del párrafo */
+}
+
+/* El párrafo del Lorem Ipsum */
+.review p {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente limpia */
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+  min-height: 100px; /* Mantiene alineación si los textos varían */
+}
+
+/* Contenedor de las estrellas */
+.rating {
+  display: flex;
+  gap: 4px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Estilo de las estrellas */
+.star {
+  font-size: 1.2rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.star.filled {
+  color: #ffb400; /* Dorado de la imagen */
+}
+
+/* El nombre del autor (etiqueta strong en tu código) */
+.review strong {
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #333;
+}
+
+
+
+/* Responsive: Se apilan en móvil */
+/* @media (max-width: 768px) {
+  .reviews-wrapper {
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  
+  .review {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+} */

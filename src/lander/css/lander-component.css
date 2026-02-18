@@ -29,6 +29,7 @@ body {
 transition: transform 0.3s ease; /* Un efecto bonito al pasar el mouse (opcional) */
     box-sizing: border-box;    /* Para que el padding no aumente el tamaño total */
     background-color: var(--color-2);
+    cursor: pointer;
 }
 
 .lander-card:hover {
