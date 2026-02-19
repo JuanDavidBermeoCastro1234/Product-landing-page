@@ -31,6 +31,8 @@ export const Nav = (): JSX.Element=>{
             <section className="content-img">
             <img className ='img'src={miFoto} alt="" />
             </section>
+
+            
         </div>
         
     
