@@ -5,6 +5,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  
 }
 
 body {
@@ -28,8 +29,10 @@ body {
     padding: 40px 100px;
 transition: transform 0.3s ease; /* Un efecto bonito al pasar el mouse (opcional) */
     box-sizing: border-box;    /* Para que el padding no aumente el tamaño total */
-    background-color: var(--color-2);
+    background-color: #ffffff;
     cursor: pointer;
+    border: 5px solid #F2F2F2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02); /* Sombra casi invisible pero elegante */
 }
 
 .lander-card:hover {

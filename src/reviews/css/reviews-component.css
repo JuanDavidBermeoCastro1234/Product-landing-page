@@ -17,8 +17,10 @@ body {
 
 /* Contenedor que envuelve el título y el slider */
 .boxPrincipal {
+  margin-top: 40px;
+  margin-bottom: 10px;
   text-align: center;
-  padding: 80px 20px 40px 20px;
+  /* padding: 80px 20px 40px 20px; */
   background-color: #ffffff; /* Asegura el fondo blanco de la imagen */
 }
 

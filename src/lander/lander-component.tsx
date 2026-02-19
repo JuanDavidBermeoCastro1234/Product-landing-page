@@ -8,7 +8,7 @@ interface Props {
     img:string
 };
 
-export const LanderComponent = ({p='hola',h3='Money back guarantee',img='/src/assets/x.png'}:Props)=>{
+export const LanderComponent = ({p='hola',h3='Money back guarantee',img=''}:Props)=>{
     return(
         <div className='lander-card'>
             <img className='img' src={img} alt="" />
