@@ -1,0 +1,24 @@
+
+:root{
+
+    --color-1:#313131;
+    --color-2:#717171;
+    --color-3:#616161;
+    --color-4:#FFFFFF;
+    --color-5:#0A74F1;
+
+}
+@font-face {
+    font-family: "Poppins-Medium";
+    src: url(../../fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-Regular";
+    src: url(../../fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-SemiBold";
+    src: url(../../fonts/Poppins-SemiBold.ttf);
+}
