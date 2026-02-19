@@ -14,17 +14,17 @@ export const Lander = ()=>{
 
             <div className='components'>
             <LanderComponent 
-            img="/src/assets/bombi.png"
+            img="/public/bombi.png"
             h3="100% high quality product"
             p="We have option of pick up in store"
             />
             <LanderComponent 
-            img="/src/assets/shop.png"
+            img="/public/shop.png"
             h3="Free shipping charge"
             p="Inside City delivery within 5 days"
             />
             <LanderComponent 
-            img="/src/assets/x.png"
+            img="/public/x.png"
             h3="Money back guarantee"
             p="We will take return in some cases"
             />

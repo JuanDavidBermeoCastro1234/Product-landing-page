@@ -1,5 +1,6 @@
 import type { JSX } from "react";
 import './css/home.css'
+import miFoto from "/public/carshop.png";
 
 
 export const Nav = (): JSX.Element=>{
@@ -28,7 +29,7 @@ export const Nav = (): JSX.Element=>{
                 <button onClick={()=> {console.log('falta el orden now')}}>Order now</button>
             </section>
             <section className="content-img">
-            <img className ='img'src="/src/assets/carshop.png" alt="" />
+            <img className ='img'src={miFoto} alt="" />
             </section>
         </div>
         
